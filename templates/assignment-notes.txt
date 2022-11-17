@@ -1,0 +1,34 @@
+API RESEARCH:
+
+1. start at "Getting Started" > "Use Cases" to see what API's are 
+availible from whatever webservice or api site
+
+2.Discovery API 	Searching events by keyword in a certain location (lat/long).
+Discovery API 	Getting events for a particular artist OR venue in a specific country/city/zip code/DMA/etc.
+Discovery API 	Getting hi-res images for a particular event or artist.
+Discovery API 	Search events of a certain genre in a particular location for a certain promoter.
+
+3. NEED:
+-API key : bOvnxgu9nshbUGFxBtbFHYA8PJyHc3Po
+-The root URL is https://app.ticketmaster.com/discovery/v2/;
+-Access a particular API endpoint,...concatenating the endpoint after the last / in root URL
+
+FYI:
+
+
+
+Ticketmaster’s rate limit will only allow us to make 5000 API calls per day, at a rate of 5 requests per second. Also, they will only give us up to 1000 results.
+
+
+4. ^^^These specific actions are provided by the API’s endpoints. 
+You can trigger an action by making an HTTP request to its particular endpoint.
+
+ 5.Event Search endpoint documentation :
+
+    Which HTTP method should be used to make a request to this endpoint?
+GET
+    The URL suffix (the route that we should add to the end of the root URL)
+https://app.ticketmaster.com/discovery/v2/events
+    Any query parameters that are permitted
+
+query parameter: https://app.ticketmaster.com/discovery/v2/events?apikey=bOvnxgu9nshbUGFxBtbFHYA8PJyHc3Po
